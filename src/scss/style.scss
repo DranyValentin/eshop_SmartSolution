@@ -1,0 +1,227 @@
+@import "includes/settings";
+
+body,
+.header,
+.header_nav,
+.currency,
+.header_nav_menu,
+.menu_currency,
+.user_corner,
+.wr_cart_feedback,
+.tel,
+.cart,
+.feedback
+{
+	display: flex;
+}
+
+body,
+.header
+{
+	flex-wrap: wrap;
+}
+
+body
+{
+	justify-content: center;
+}
+
+/* Header */
+
+.header
+{
+	justify-content: space-between;
+	width: $width;
+}
+
+.img_logo
+{
+	padding-bottom: 6px;
+}
+
+/*Style hedear nav menu*/
+.header_nav_menu
+{
+	align-items: flex-end;
+
+	li
+	{
+		padding: 0 10px;
+	}
+
+	li a
+	{
+		font-size: 19px;
+		color: #000;
+		text-transform: uppercase;
+
+		padding: 0;
+
+		&:hover
+		{
+			color: $orange;
+			background-color: initial;
+		}
+	}
+}
+/*End Style hedear nav menu*/
+
+/*Style Currency menu*/
+.menu_currency
+{
+	align-items: flex-end;
+
+	li
+	{
+		padding: 0 3px;
+	}
+
+	li a
+	{
+		font-size: 20px;
+		color: #000;
+
+		padding: 0;
+
+		&:hover
+		{
+			color: $orange;
+			background-color: initial;
+		}
+	}
+}
+/*End Style Currency menu*/
+/* Style User Corner*/
+.user_corner
+{
+	align-items: flex-end;
+	border: 1px solid red;
+}
+
+.tel
+{
+	flex-direction: column;
+
+	a
+	{
+		font-size: 17px;
+	}
+}
+
+.search 
+{
+	max-width: 150px;
+
+	background: #EEE;
+	border-radius: 10px;
+
+	input
+	{	
+		max-width: 125px;
+		background: #EEE;
+		border: none;
+		border-radius: 10px;
+	    padding: 5px;
+	}
+
+	span
+	{
+		padding-right: 7px;
+	}
+}
+
+
+.wr_cart_feedback 
+{
+	flex-direction: column;
+
+	p 
+	{
+		font-size: 11px;
+		margin: 0;
+	}
+}
+
+.cart
+{
+	flex-direction: row;
+	justify-content: center;
+	width: 85px;
+
+	background: $orange;
+
+	border-radius: 15px;	
+	
+	i
+	{
+		font-size: 29px;
+		color: #FFF;
+
+		margin-left: -4px;
+	    margin-top: 6px;
+	    font-size: 29px;
+	    padding: 1px;
+	}
+
+	p
+	{
+		width: 46px;
+		
+		text-align: right;
+		color: #FFF;
+		line-height: 13px;
+
+		margin-left: -4px;
+    	margin-top: 10px;
+    	margin-bottom: 4px;
+	
+		span
+		{
+			font-size: 24px;
+		}
+	}
+}
+
+.feedback
+{
+	flex-direction: row;
+	justify-content: center;
+	max-width: 85px;
+
+	background: #038C38;
+
+	border-radius: 15px;	
+	
+	i
+	{
+		font-size: 29px;
+		color: #FFF;
+
+		margin-left: 0px;
+	    margin-top: 8px;
+	    font-size: 29px;
+	    padding: 1px;
+	}
+
+	p
+	{
+		width: 53px;
+		
+		text-align: right;
+		color: #FFF;
+		line-height: 13px;
+
+		margin-left: -10px;
+    	margin-top: 10px;
+    	margin-bottom: 9px;
+	
+		span
+		{
+			font-size: 24px;
+		}
+	}
+}
+
+
+/* End Style User Corner*/
+/* End Header */
