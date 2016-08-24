@@ -8,6 +8,7 @@
 
 	<script src="js/jquery-3.1.0.min.js" defer></script>
 	<script src="js/bootstrap.js" defer></script>
+	<script src="js/menumobile.js" defer></script>
 
 	<header class="header">
 		<div class="logo"><a href="/">
@@ -30,9 +31,12 @@
 		<div class="user_corner">
 			<div class="wr_search_tel">
 				<form class="search"><input type="text"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></form>
-				<div class="tel">
-					<a href="tel:+380444567898">044 456-78-98</a>
-					<a href="tel:+380506785687">050 678-56-87</a>
+				<div class="wr_tel_menu">
+					<div class="tel">
+						<a href="tel:+380444567898">044 456-78-98</a>
+						<a href="tel:+380506785687">050 678-56-87</a>
+					</div>
+					<div class="menu_mobile"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></div>
 				</div>
 			</div>
 			<div class="wr_cart_feedback">
@@ -47,162 +51,5 @@
 			</div>
 		</div>
 	</header>
-
-	</div>
-	<div class="container-fluid section1">
-		<div class="row wr_show_room">
-			<div class="col-xs-12 
-						col-sm-8 col-sm-offset-2 show_room text-center">
-				<h1>Посетите наш<br>шоу-рум</h1>
-				<p>В шоу-руме компании Home Systems вы сможете увидеть, протестировать и выбрать системы домашней автоматизации, повышающие комфорт вашей жизни!</p>
-			</div>
-		</div>
-	</div>
-
-	<div id="events" class="container-fluid section_events">
-		<div class="row">
-			<div class="col-xs-12">
-				<h2>Анонсы мероприятий</h2>
-			</div>
-			<div id="carousel_events" class="col-xs-12 wr_bl_events carousel slide" data-ride="carousel">
-				<div class="col-xs-1 arrow arrow_left"><a class="left carousel-control" href="#carousel_events" role="button" data-slide="prev"><img src="img/arrow_left.svg"></a></div>
-				<div class="col-xs-10 wr_events carousel-inner" role="listbox">
-					<div class="col-xs-12 item active" id="slide0">
-						<div class="col-xs-12 col-sm-6 img_events"><img src="/img/alfaro_main.jpg" class="img-responsive"></div>
-						<div class="col-xs-12 col-sm-6 text_events">
-							<h3>Слайд1</h3>
-							<p>26 августа в Киеве (Оболонская набережная, 1) с 17:00 до 21:00 пройдет открытие нового Workshop & Showroom технологий Умного дома компании Home Systems. Регистрация открыта!</p>
-							<p><a href="http://homesystems.com.ua/blog/2016/08/02/grand-opening-party/">подробнее...</a></p>
-						</div>
-					</div>
-					<div class="col-xs-12 item" id="slide1">
-						<div class="col-xs-12 col-sm-6 img_events"><img src="http://homesystems.com.ua/wp-content/uploads/2016/08/Anons-26.png" class="img-responsive" style="border: 1px solid orange"></div>
-						<div class="col-xs-12 col-sm-6 text_events">
-							<h3>Слайд2</h3>
-							<p>отъемлемая часть интернета. Для многих сайтов это единственный источник дохода. Когда пользователь устанавливает глушилку рекламы, то убивает всю мотивацию авторов на корню. Сегодня мы покажем вам способ определения глушилки, который распространяется только на рекламу Google Adsens</p>
-							<p><a href="http://homesystems.com.ua/blog/2016/08/02/grand-opening-party/">подробнее...</a></p>
-						</div>
-					</div>
-					<div class="col-xs-12 item" id="slide2">
-						<div class="col-xs-12 col-sm-6 img_events"><img src="http://homesystems.com.ua/wp-content/uploads/2016/08/Anons-26.png" class="img-responsive" style="border: 1px solid orange"></div>
-						<div class="col-xs-12 col-sm-6 text_events">
-							<h3>Слайд3</h3>
-							<p>Buttons will appear pressed (with a darker background, darker border, and inset shadow) when active. For and include the aria-pressed="true" attribute) should you need to replicate the active state programmatically.</p>
-							<p><a href="http://homesystems.com.ua/blog/2016/08/02/grand-opening-party/">подробнее...</a></p>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-1 arrow arrow_right"><a class="right carousel-control" href="#carousel_events" role="button" data-slide="next"><img src="img/arrow_right.svg"></a></div>
-			</div>
-		</div>
-	</div>
-
-	<div class="container-fluid">
-		<div class="row wr_form">
-			<form id="form">
-				<h2 id="user">Запишитесь на посещение<br>Шоу-Рума!</h2>
-				<div class="col-xs-12 
-							col-sm-5 col-sm-offset-1 wr_sect_form">
-					<div class="form-group">
-						<label class="sr-only">Имя</label>
-						<div class="col-xs-12 bl_name">
-							<input type="text" class="form-control" placeholder="ИМЯ" required>
-						</div>
-					</div>
-					<div class="form-group">
-						<label class="sr-only">Телефон</label>
-						<div class="col-xs-12 bl_tel">
-							<input type="text" class="form-control" placeholder="ТЕЛЕФОН" required>
-						</div>
-					</div>
-					<div class="form-group">
-						<label class="sr-only">E-mail</label>
-						<div class="col-xs-12 bl_email">
-							<input type="email" class="form-control" placeholder="E-MAIL" required>
-						</div>
-					</div>
-				</div>
-				<div class="col-xs-12
-							col-sm-5 col-sm-offset-1 wr_sect_form">
-					<div class="col-xs-12 bl_select_date">
-						<p class="col-xs-5">Выберите дату</p>
-						<div class="col-xs-2 col-xs-push-2 sel1">
-							<select class="form-control select_date_num" required>
-							</select>
-						</div>
-						<div class="col-xs-2 col-xs-push-2 sel2">
-							<select class="form-control select_date_month" required>
-							<option value="">МЕСЯЦ</option>
-							</select>
-						</div>
-					</div>
-					<div class="col-xs-12 bl_select_system">
-						<p class="col-xs-6">Выберите систему</p>
-						<div class="col-xs-6 sel3">
-							<div class="select_system_caption">Выбор не сделан
-								<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
-							</div>
-							<ul class="select_system hidden">
-								<li><input id="system_1" class="checkbox_system" type="checkbox" value="Домашняя автоматизация"><label for="system_1">Домашняя автоматизация</label></li>
-								<li><input id="system_2" class="checkbox_system"type="checkbox" value="Управление освещением"><label for="system_2">Управление освещением</label></li>
-								<li><input id="system_3" class="checkbox_system"type="checkbox" value="Климат-контроль"><label for="system_3">Климат-контроль</label></li>
-								<li><input id="system_4" class="checkbox_system"type="checkbox" value="Интернет и Wi-Fi"><label for="system_4">Интернет и Wi-Fi</label></li>
-								<li><input id="system_5" class="checkbox_system"type="checkbox" value="Домашнее аудио"><label for="system_5">Домашнее аудио</label></li>
-								<li><input id="system_6" class="checkbox_system"type="checkbox" value="Видео и мультимедиа"><label for="system_6">Видео и мультимедиа</label></li>
-								<li><input id="system_7" class="checkbox_system"type="checkbox" value="Телевидение"><label for="system_7">Телевидение</label></li>
-								<li><input id="system_8" class="checkbox_system"type="checkbox" value="Системы Hi-End Stereo"><label for="system_8">Системы Hi-End Stereo</label></li>
-								<li><input id="system_9" class="checkbox_system"type="checkbox" value="Видеонаблюдение"><label for="system_9">Видеонаблюдение</label></li>
-								<li><input id="system_10" class="checkbox_system"type="checkbox" value="Охранная сигнализация"><label for="system_10">Охранная сигнализация</label></li>
-								<li><input id="system_11" class="checkbox_system"type="checkbox" value="Отопление"><label for="system_11">Отопление</label></li>
-								<li><input id="system_12" class="checkbox_system"type="checkbox" value="Энергоэффективность"><label for="system_12">Энергоэффективность</label></li>
-								<li><input id="system_13" class="checkbox_system"type="checkbox" value="Современная электрика"><label for="system_13">Современная электрика</label></li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-xs-12">
-						<button type="submit" class="btn btn-default btn_visit_room">Отправить</button>
-					</div>
-				</div>
-				<div class="col-xs-12
-							col-sm-10 col-sm-offset-1">
-					<p class="text_save_data">Мы гарантируем сохранность ваших персональных данных.</p>
-				</div>
-				<div class="clearfix"></div>
-			</form>
-		</div>
-	</div>
-	<div class="container-fluid wr_footer">
-		<footer class="footer">
-				<div class="wr_nav1">
-					<ul class="nav nav-pills nav-stacked">
-						<li>
-							<a href="#"><span class="icon-hs-facebook"></span></a>
-						</li>
-					</ul>
-				</div>
-				<div class="wr_nav2">
-					<ul class="nav nav-pills nav-stacked">
-						<li><a href="http://homesystems.com.ua/umnyj-dom/komfort/" target="_blank">Комфорт</a></li>
-						<li><a href="http://homesystems.com.ua/umnyj-dom/razvlecheniya/" target="_blank">Мультимедиа</a></li>
-						<li><a href="http://homesystems.com.ua/umnyj-dom/bezopasnost/" target="_blank">Безопасность</a></li>
-						<li><a href="http://homesystems.com.ua/umnyj-dom/energoeffektivnost/" target="_blank">Эффективность</a></li>
-					</ul>
-				</div>
-				<address class="wr_nav3">
-					<ul class="nav">
-						<li>ул. Преображенская 23А, г. Киев</li>
-						<li><a href="tel:+380442272802">+38-044-227-28-02</a></li>
-						<li><a href="mailto:info@homesystems.com.ua">info@homesystems.com.ua</a></li>
-					</ul>
-				</address>
-			
-		</footer>
-	</div>
-
-
-<script defer>
-	
-
-</script>
 
 </html>

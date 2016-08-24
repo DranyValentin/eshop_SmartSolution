@@ -7,10 +7,12 @@ body,
 .header_nav_menu,
 .menu_currency,
 .user_corner,
+.wr_search_tel,
 .wr_cart_feedback,
 .tel,
 .cart,
-.feedback
+.feedback,
+.wr_tel_menu
 {
 	display: flex;
 }
@@ -91,21 +93,20 @@ body
 	}
 }
 /*End Style Currency menu*/
+
 /* Style User Corner*/
 .user_corner
 {
-	align-items: flex-end;
-	border: 1px solid red;
+	min-width: 267px;
+	justify-content: space-between;
 }
 
-.tel
+.wr_search_tel 
 {
 	flex-direction: column;
+	justify-content: space-between;
 
-	a
-	{
-		font-size: 17px;
-	}
+	padding-top: 5px;
 }
 
 .search 
@@ -130,10 +131,52 @@ body
 	}
 }
 
+.wr_tel_menu
+{
+	align-items: flex-end;
+}
+
+.tel
+{
+	flex-direction: column;
+
+	a
+	{
+		font-size: 17px;
+	}
+}
+
+/*Menu Mobile*/
+
+.menu_mobile
+{
+	display: none;
+}
+
+.glyphicon-menu-hamburger
+{
+	font-size: 34px;
+
+	border: 1px solid $orange;
+	border-radius: 10px;
+	padding: 5px;
+	margin-bottom: 5px;
+
+	&:hover
+	{
+		cursor: pointer;
+		color: #FF9E15;
+	}
+}
+/*End Menu Mobile*/
+
 
 .wr_cart_feedback 
 {
 	flex-direction: column;
+	justify-content: space-between;
+
+	padding: 5px 0;
 
 	p 
 	{
@@ -225,3 +268,71 @@ body
 
 /* End Style User Corner*/
 /* End Header */
+
+
+
+/* Media for screen from 768 to 992 */
+@media (max-width: 992px)
+{
+	body
+	{
+		background: ghostwhite;	
+	}
+
+	.header_nav_menu
+	{
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-end;
+	}
+	
+}
+/* End Media for screen from 768 to 992 */
+/* Media for screen from 481 to 768 */
+@media (max-width: 768px)
+{
+	body
+	{
+		background: aliceblue;	
+	}
+
+	.header_nav,
+	.currency
+	{
+		display: none;
+	}
+
+	/*Menu Mobile*/
+	.menu_mobile
+	{
+		display: flex;
+	}
+
+	.glyphicon-menu-hamburger
+	{
+		margin-left: 12px;
+	}
+	/*End Menu Mobile*/
+	
+}
+/* End Media for screen from 481 to 768 */
+/* Media for screen to 480 */
+@media (max-width: 480px)
+{
+	body
+	{
+		background: aliceblue;	
+	}
+
+	.user_corner
+	{
+		min-width: 155px;
+	}
+
+	.search,
+	.tel
+	{
+		display: none;
+	}	
+}
+/* End Media for screen to 480 */
