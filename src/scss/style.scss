@@ -268,12 +268,44 @@ body
 /* End Header */
 
 /*Slide*/
-// .wr_slide
-// {
-// 	justify-content: center;
-// 	// width: 100%;
-// 	background: #ADADAD;
-// }
+.wr_slide
+{
+	background: #ADADAD;
+}
+
+.carousel-indicators
+{
+	li
+	{
+		border: 1px solid $orange;
+	}
+
+	.active
+	{
+		background: $orange;
+	}
+}
+
+.carousel-caption
+{
+	max-width: 210px;
+
+	p
+	{
+		background: $orange;
+
+		padding: 20px 0;
+
+		a
+		{
+			font-size: 18px;
+			font-weight: 600;
+			color: #FFF;
+			text-transform: uppercase;
+			text-shadow: none;
+		}
+	}
+}
 
 /*End Slide*/
 
