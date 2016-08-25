@@ -16,6 +16,7 @@ body,
 .wr_card_products,
 .section_2,
 .head_popular_products,
+.footer
 {
 	display: flex;
 }
@@ -468,6 +469,72 @@ body
 
 /*End Style Section #2*/
 
+/* Footer */
+.wr_footer
+{
+	background-color: #1D1D1B;
+
+	margin-top: 165px;
+}
+
+.img_logo_footer
+{
+	margin: -76px auto 0;
+}
+
+.footer
+{
+	max-width: $width;
+	justify-content: space-between;
+
+	margin: 0 auto;
+	padding: 100px 10px;
+
+	address
+	{
+		padding: 0;
+	}
+
+	ul
+	{
+		li
+		{
+			font-size: 18px;
+			color: #fff;
+			
+			padding: 5px;
+
+			a
+			{
+				font-size: 18px;
+				color: #fff;
+
+				padding: 0;
+
+				&:hover
+				{
+					color: #FF9E15;
+					background-color: transparent;
+				}
+
+				&:link
+				{
+					background-color: transparent;
+				}
+			}
+		}
+	}
+}
+
+.icon-hs-facebook
+{
+	font-size: 50px;
+	color: #EE7B0D;
+	background-color: #fff;
+
+	border-radius: 25px;
+}
+/*End Footer*/
 
 /* Media for screen from 768 to 992 */
 @media (max-width: 992px)
@@ -558,6 +625,23 @@ body
 		}
 	}
 
+	/*Footer*/
+	.footer
+	{
+		ul
+		{
+			li
+			{
+				font-size: 14px;
+
+				a
+				{
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	/*End Footer*/
 }
 /* End Media for screen from 481 to 768 */
 /* Media for screen to 480 */
@@ -614,5 +698,16 @@ body
 	}
 	/*End Section #2*/
 
+	/*Footer*/
+	.footer
+	{
+		flex-direction: column;
+	}
+
+	.wr_nav3
+	{
+		margin-top: 10px; 
+	}
+	/*End Footet*/
 }
 /* End Media for screen to 480 */
