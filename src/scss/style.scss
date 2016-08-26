@@ -16,7 +16,9 @@ body,
 .wr_card_products,
 .wr_section_1,
 .wr_slide_products,
+.wr_products_move,
 .section_2,
+.btn_consult,
 .head_popular_products,
 .footer
 {
@@ -331,6 +333,32 @@ h1
 	}
 }
 
+.control_carusel_indicators
+{
+	bottom: 0;
+	top: 235px;
+
+	.contr_indi
+	{
+		width: 80px;
+		height: 50px;
+		text-indent: 0;
+		background: $grey;
+
+		img
+		{
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.active
+	{
+		border: 3px solid $orange;
+		background-color: #FFF;
+	}
+}
+
 .carousel-caption
 {
 	max-width: 210px;
@@ -352,6 +380,10 @@ h1
 	}
 }
 
+.wr_products_move
+{
+	justify-content: space-between;
+}
 /*End Slide*/
 
 /*Style Section #1*/
@@ -509,6 +541,8 @@ h1
 
 	ul
 	{
+		list-style: none;
+
 		li
 		{
 			a
@@ -605,6 +639,252 @@ h1
 
 	font-size: 20px;
 }
+
+/*Short Features*/
+.short_feature
+{
+	ul
+	{
+		font-size: 20px;
+		font-weight: 600;
+		color: $orange;
+
+		margin-top: 40px;
+	}
+
+	figure
+	{
+		margin-top: 20px;
+
+		figcaption
+		{
+			font-size: 25px;
+			color: $orange;
+			text-align: center;
+		}
+	}
+}
+/*End Short Features*/
+
+/*Information about Product*/
+.product_info
+{
+	margin-top: 40px;
+
+	ul
+	{
+		border: none;
+		li
+		{
+			a
+			{
+				font-size: 25px;
+				color: $orange;
+				padding: 2px 15px;
+				border: none;
+
+				&:hover
+				{
+					color: #FFF;
+					background: $orange;
+					border-radius: 0 10px 0 0;
+				}
+			}
+
+			&.active
+			{
+				a:link
+				{
+					color: #FFF;
+					background: $orange;
+					border-radius: 0 10px 0 0;
+					border: none;
+				}
+			}
+		}
+	}
+
+	.tab-content
+	{
+		border: 1px solid $orange;
+		padding: 10px 5px;
+	}
+
+	.tab-pane
+	{
+		p
+		{
+			font-size: 15px;
+		}
+	}
+}
+/*End Information about Product*/
+/*Scope Product*/
+.scope
+{
+	margin-top: 40px;
+
+	h2
+	{
+		font-size: 25px;
+		color: $orange;
+	}
+}
+/*End Scope Product*/
+/*Similar Products*/
+.similar_products
+{
+	h2
+	{
+		font-size: 25px;
+		color: $orange;
+		padding-left: 15px;
+	}
+}
+/*End Similar Products*/
+
+.btn_consult
+{
+	justify-content: center;
+	margin: 40px 0 60px;
+
+	a
+	{
+		font-size: 20px;
+		color: $green;
+		
+		background: #E7E7E7;
+
+		border-radius: 10px;
+		padding: 10px 5px;
+	}
+}
+
+/*Comments*/
+.comments
+{
+	margin-top: 40px;
+
+	h2
+	{
+		font-size: 25px;
+		color: $orange;
+	}
+}
+
+.bl_comment
+{
+	margin-top: 15px;
+
+	h5
+	{
+		font-size: 21px;
+		color: $orange;
+	}
+
+	p
+	{
+		font-size: 15px;
+	}
+}
+/*End Comments*/
+
+/*Send Comment*/
+.send_comment,
+.subscribe
+{
+	margin-top: 15px;
+
+	h3
+	{
+		font-size: 25px;
+		color: $orange;
+	}
+}
+
+#inputName,
+#inputEmail,
+#inputEmailsub
+{
+	font-size: 20px;
+	font-style: italic;
+	max-width: 300px;
+
+	border: 1px solid $orange;
+}
+
+#inputText
+{
+	font-size: 20px;
+	font-style: italic;
+
+	border: 1px solid $orange;
+}
+
+.btn_send_comment,
+.btn_subscribe
+{
+	font-size: 20px;
+	color: #FFF;
+
+	background: $orange;
+	border-radius: 0;
+
+	padding: 2px 10px;
+
+	&:hover
+	{
+		color: $orange;
+		background: #FFF;
+	}
+}
+/*End Send Comment*/
+
+/*Right Aside*/
+.price
+{
+	font-size: 36px;
+	color: #FFF;
+	text-align: center;
+	background: $green;
+	border-radius: 10px;
+	margin: 0;
+}
+
+.aside_currency
+{
+	font-size: 15px;
+	color: $grey;
+}
+
+.btn_buy
+{
+	text-align: center;
+	background: $orange;
+	border-radius: 10px;
+	margin-top: 20px;
+
+	a
+	{
+		font-size: 31px;
+		color: #FFF;
+	}
+}
+
+.video_review
+{
+	margin-top: 20px;
+
+	h4
+	{
+		font-size: 21px;
+		color: $orange;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+
+/*End Right Aside*/
 
 /*End Style Section #2*/
 
@@ -742,6 +1022,12 @@ h1
 	/*End Left Menu*/
 	/*End Section #2*/
 	
+	/*Right Aside*/
+	.price
+	{
+		font-size: 30px;
+	}
+	/*End Right Aside*/
 }
 /* End Media for screen from 768 to 992 */
 /* Media for screen from 481 to 768 */
@@ -799,6 +1085,11 @@ h1
 	}
 
 	/*Left Menu*/
+	.wr_leftMenu_filter
+	{
+		display: none;
+	}
+
 	.left_menu
 	{
 		ul
@@ -813,6 +1104,13 @@ h1
 		}
 	}
 	/*End Left Menu*/
+
+	/*Right Aside*/
+	.price
+	{
+		margin-top: 30px;
+	}
+	/*End Right Aside*/
 
 	/*Footer*/
 	.footer
@@ -913,6 +1211,26 @@ h1
 	/*End Left Menu*/
 	/*End Section #2*/
 
+	/*Right Aside*/
+	.price
+	{
+		font-size: 26px;
+	}
+
+	.aside_currency
+	{
+		font-size: 13px;
+	}
+
+	.btn_buy
+	{
+		a
+		{
+			font-size: 26px;
+		}
+	}
+	/*End Right Aside*/
+
 	/*Footer*/
 	.footer
 	{
@@ -926,3 +1244,20 @@ h1
 	/*End Footet*/
 }
 /* End Media for screen to 480 */
+
+/*Zero Class*/
+.width_zero
+{
+	width: 0;
+}
+
+.padding_zero
+{
+	padding: 0;
+}
+
+.margin_zero
+{
+	margin: 0;
+}
+/*End Zero Class*/
