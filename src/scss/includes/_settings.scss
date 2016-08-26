@@ -5,18 +5,8 @@
 $width: 1200px;
 $fontSize: 18px;
 $orange: #EE7B0D;
-
-// Header
-$colorTextLogo: #1a2755;
-$colorBackgroundHeader: #fcfcfc;
-
-//Header nav
-$colorTextNav: #3b5998;
-$colorBackgroundNav: #3b5998;
-$colorBorderNav: #3b5998;
-
-// Section
-$fontSizeHeader: 30px;
+$green: #038C38;
+$grey: #9B9B9A;
 
 body, header, main, footer, div, p, h1, h2, h3, figure, figcaption, a  
 {
@@ -26,15 +16,12 @@ body, header, main, footer, div, p, h1, h2, h3, figure, figcaption, a
 
 ul, li
 {
-	list-style: none;
+	//list-style: none;
 	margin: 0;
 	padding: 0;
 }
-
-
 
 *
 {
 	box-sizing: border-box;
 }
-
